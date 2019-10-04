@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.os.Parcelable;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,6 +31,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void handlerSubmit(View view) {
         Intent intent = new Intent(this,BundleActivity.class);
+        startActivity(intent);
+    }
+
+    public void handleParcelable(View view) {
+        Intent intent = new Intent(this, ParcelableActivity.class);
         startActivity(intent);
     }
 }
